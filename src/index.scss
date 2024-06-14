@@ -1,0 +1,30 @@
+/* App.scss */
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../src/assets/fonts/fonts.scss";
+
+// Variables
+$primary-color: #ffd93b;
+$secondary-color: #000000;
+$font-size-large: 1.5rem;
+// custom btn styles
+
+.btn-tcbea {
+  border-color: $primary-color;
+  font-family: "Roboto", sans-serif;
+}
+// BEM Naming Convention
+.app {
+}
+
+.header {
+  &__nav__container {
+    padding: 1em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: #187795;
+  }
+}
+.logo {
+  max-width: 150px;
+}
