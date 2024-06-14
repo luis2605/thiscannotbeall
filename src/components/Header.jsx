@@ -110,9 +110,15 @@ const Header = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">DE</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">ES</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">EN</Dropdown.Item>
+                  <Dropdown.Item onClick={() => changeLanguage("de")}>
+                    DE
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => changeLanguage("es")}>
+                    ES
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => changeLanguage("en")}>
+                    EN
+                  </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>

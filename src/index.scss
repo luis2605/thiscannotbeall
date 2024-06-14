@@ -43,3 +43,50 @@ $font-size-large: 1.5rem;
 .logo {
   max-width: 150px;
 }
+
+.home {
+  &__hero__image {
+    width: 150px;
+  }
+  &__hero__container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "topleft topcenter topright"
+        "centerleft centercenter centerright"
+        "bottomleft bottomcenter bottomright";
+      padding: 1em 1em;
+    }
+  }
+  &__hero__h2 {
+    border: 1px solid $primary-color;
+    font-size: 1rem;
+    padding: 1em;
+  }
+  &__hero__first_subcontainer,
+  &__hero__second_subcontainer,
+  &__hero__third_subcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    padding: 1em 1em;
+  }
+  &__hero__first_subcontainer {
+    grid-area: topleft;
+    position: relative;
+    top: 45%;
+  }
+  &__hero__second_subcontainer {
+    grid-area: centercenter;
+  }
+  &__hero__third_subcontainer {
+    grid-area: bottomright;
+    position: relative;
+    top: -45%;
+  }
+}
