@@ -9,7 +9,15 @@ $font-size-large: 1.5rem;
 // custom btn styles
 
 .btn-tcbea {
-  border-color: $primary-color;
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+.btn-tcbea:hover {
+  background-color: $primary-color;
+  color: #ffff;
+}
+.btn-tcbea-noBorders {
+  border: none;
   font-family: "Roboto", sans-serif;
 }
 // BEM Naming Convention
@@ -23,6 +31,13 @@ $font-size-large: 1.5rem;
     align-items: center;
     justify-content: space-between;
     // background-color: #187795;
+    &--navBtns {
+      display: flex;
+    }
+    &--navBtnsMobil {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 .logo {
